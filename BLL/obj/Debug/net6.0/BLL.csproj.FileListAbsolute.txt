@@ -1,0 +1,12 @@
+D:\QLBHHoaQua\BLL\bin\Debug\net6.0\BLL.deps.json
+D:\QLBHHoaQua\BLL\bin\Debug\net6.0\BLL.dll
+D:\QLBHHoaQua\BLL\bin\Debug\net6.0\BLL.pdb
+D:\QLBHHoaQua\BLL\obj\Debug\net6.0\BLL.csproj.AssemblyReference.cache
+D:\QLBHHoaQua\BLL\obj\Debug\net6.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\QLBHHoaQua\BLL\obj\Debug\net6.0\BLL.AssemblyInfoInputs.cache
+D:\QLBHHoaQua\BLL\obj\Debug\net6.0\BLL.AssemblyInfo.cs
+D:\QLBHHoaQua\BLL\obj\Debug\net6.0\BLL.csproj.CoreCompileInputs.cache
+D:\QLBHHoaQua\BLL\obj\Debug\net6.0\BLL.dll
+D:\QLBHHoaQua\BLL\obj\Debug\net6.0\refint\BLL.dll
+D:\QLBHHoaQua\BLL\obj\Debug\net6.0\BLL.pdb
+D:\QLBHHoaQua\BLL\obj\Debug\net6.0\ref\BLL.dll

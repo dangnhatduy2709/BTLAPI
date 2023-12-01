@@ -22,7 +22,7 @@ namespace DAL
             string msgError = "";
             try
             {
-                var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgError, "lsp_getall");
+                var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgError, "lh_getall");
                 if (!string.IsNullOrEmpty(msgError))
                     throw new Exception(msgError);
                 return dt.ConvertTo<LoaiHangModel>().ToList();
@@ -38,7 +38,7 @@ namespace DAL
             string msgError = "";
             try
             {
-                var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgError, "lsp_get-by-id", "@LoaiHangID", id);
+                var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgError, "lh_get-by-id", "@LoaiHangID", id);
                 if (!string.IsNullOrEmpty(msgError))
                     throw new Exception(msgError);
                 return dt.ConvertTo<LoaiHangModel>().FirstOrDefault();
@@ -54,7 +54,7 @@ namespace DAL
             string msgError = "";
             try
             {
-                var result = _dbHelper.ExecuteScalarSProcedureWithTransaction(out msgError, "lsp_create",
+                var result = _dbHelper.ExecuteScalarSProcedureWithTransaction(out msgError, "lh_create",
                 "@TenLH", model.TenLH);
                 if ((result != null && !string.IsNullOrEmpty(result.ToString())) || !string.IsNullOrEmpty(msgError))
                 {
@@ -73,7 +73,7 @@ namespace DAL
             string msgError = "";
             try
             {
-                var result = _dbHelper.ExecuteScalarSProcedureWithTransaction(out msgError, "lsp_update",
+                var result = _dbHelper.ExecuteScalarSProcedureWithTransaction(out msgError, "lh_update",
                 "@LoaiHangID ", model.LoaiHangID,
                 "@TenLH", model.TenLH);
                 if ((result != null && !string.IsNullOrEmpty(result.ToString())) || !string.IsNullOrEmpty(msgError))

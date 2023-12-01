@@ -189,3 +189,51 @@ VALUES
 
 --thủ tục
 --loại sản phẩm
+create procedure lh_getall
+as
+	begin
+		select * from LoaiHang
+	end;
+go
+lsp_getall
+create procedure [dbo].[lh_get-by-id](@LoaiHangID int)
+as
+	begin
+		select *
+		from LoaiHang
+		Where LoaiHangID = @LoaiHangID
+	end;
+go
+
+create procedure lh_create(@TenLH int)
+as 
+	begin
+		INSERT INTO LoaiHang(TenLH)
+                VALUES (@TenLH);
+        SELECT '';
+	end;
+go 
+
+create procedure lh_update(
+@LoaiHangID int,
+@TenLH int
+)
+as
+	begin
+		Update  LoaiHang
+	  set  
+	  TenLH = IIf(@TenLH is Null, TenLH, @TenLH)
+	  Where LoaiHangID = @LoaiHangID
+      
+	  SELECT '';
+    END;
+go
+
+create procedure lh_delete(@LoaiHangID int)
+as
+	begin
+		delete from LoaiHang
+		where LoaiHangID = @LoaiHangID
+	end;
+go
+

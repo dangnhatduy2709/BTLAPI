@@ -82,9 +82,9 @@ namespace HoaQua_Nguoidung.Controllers
         {
             return await _MatHangBusiness.GetAllDonHangBan();
         }
-        [Route("GetAllThongtinMatHang")]
+        [Route("GetAllNhaCC")]
         [HttpGet]
-        public async Task<List<NhaCCModel>> GetAllThongtinMatHang()
+        public async Task<List<NhaCCModel>> GetAllNhaCC()
         {
             return await _NhaCCBusiness.GetAllNhaCC();
         }
@@ -97,7 +97,7 @@ namespace HoaQua_Nguoidung.Controllers
             {
                 long total = 0;
                 var data = _MatHangBusiness.Search(
-                    productFilterRequestModel.PageIndex,
+                    productFilterRequestModel.PageIndex,  
                     productFilterRequestModel.PageSize,
                     out total,
                     productFilterRequestModel.ProductId,

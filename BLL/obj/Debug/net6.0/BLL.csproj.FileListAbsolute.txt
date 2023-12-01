@@ -10,3 +10,8 @@ D:\QLBHHoaQua\BLL\obj\Debug\net6.0\BLL.dll
 D:\QLBHHoaQua\BLL\obj\Debug\net6.0\refint\BLL.dll
 D:\QLBHHoaQua\BLL\obj\Debug\net6.0\BLL.pdb
 D:\QLBHHoaQua\BLL\obj\Debug\net6.0\ref\BLL.dll
+D:\QLBHHoaQua\BLL\bin\Debug\net6.0\DAL.dll
+D:\QLBHHoaQua\BLL\bin\Debug\net6.0\Models.dll
+D:\QLBHHoaQua\BLL\bin\Debug\net6.0\DAL.pdb
+D:\QLBHHoaQua\BLL\bin\Debug\net6.0\Models.pdb
+D:\QLBHHoaQua\BLL\obj\Debug\net6.0\BLL.csproj.CopyComplete
